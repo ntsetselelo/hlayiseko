@@ -38,21 +38,21 @@
 
                     </div>
                         <form id="appointmentForm">
-                            <input type="text" placeholder="Full Name" required>
-                            <input type="email" placeholder="Email Address" required>
-                            <input type="tel" placeholder="Phone Number" required>
+                            <input type="text" name="fullName" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="tel" name="phoneNumber" placeholder="Phone Number" required>
 
-                            <select required>
-                                <option>Select Service</option>
+                            <select name="serviceType" required>
+                                <option value="" disabled selected>Select Service</option>
                                 <option>Comprehensive Eye Examination</option>
                                 <option>Prescription Glasses</option>
                                 <option>Contact Lens Fitting</option>
                                 <option> Glaucoma Screening</option>
                                 <option>Dry Eye Management</option>
                             </select>
-                            <input type="date"required>
+                            <input type="date" name="date" required>
 
-                            <textarea rows="4" placeholder="Additional Message"> </textarea>
+                            <textarea name="additionalMessage" rows="4" placeholder="Additional Message"> </textarea>
 
                             <button type="submit" class="btn">
                                 Request Appointment
@@ -108,5 +108,6 @@
 
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
      <script src="js/script.js"></script>
+    <script src="SendEmail.js"></script>
 </body>
 </html>
